@@ -1,0 +1,252 @@
+/*COULEURS
+#2e29294d (gray)
+#bcbc80cc (yellow green)
+#524f4f;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #524f4f;
+  color: black;
+  font-family: "roboto", "lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  line-height: normal;
+}
+
+header {
+  width: 1940px;
+  background-image: linear-gradient(
+      to top left,
+      hsla(0, 6%, 17%, 0.4),
+      hsla(60, 31%, 62%, 0.3)
+    ),
+    url(header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+/*HEADER*/
+.main-title {
+  width: 1120px;
+  font-size: 280%;
+  font-weight: 300;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+/*NAVIGATION HEADER*/
+.main-nav {
+  position: absolute;
+  right: 150px;
+  top: 40px;
+  font-size: 195%;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.main-menu {
+  list-style-type: none;
+}
+
+.main-menu a:link,
+.main-menu a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+  color: rgb(245, 195, 57);
+  transition: color 0.6s;
+}
+
+/*TEXTE-HEADER*/
+.intro-texte {
+  position: absolute;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid red;
+}
+
+/*SECTIONS*/
+
+/*INFOS*/
+
+.infos {
+  width: 1940px;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom right,
+      hsla(0, 6%, 17%, 0.5),
+      hsla(60, 31%, 62%, 0.2)
+    ),
+    url(sectionInfos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-title-infos {
+  width: 600px;
+  font-size: 280%;
+  font-weight: 300;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+.texte-bio {
+  position: absolute;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid red;
+}
+
+.matériels-photo {
+  position: absolute;
+  right: 150px;
+  top: 590px;
+  font-size: 150%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: #5c5c49cc;
+  opacity: 0.6;
+}
+.matériels-list {
+  list-style-type: none;
+  line-height: 130%;
+}
+
+.matériels-list a:link,
+.matériels-list a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.matériels-list a:hover,
+.matériels-list a:active {
+  color: rgb(245, 195, 57);
+  transition: color 0.6s;
+}
+
+/*Galeries*/
+
+.galeries {
+  display: flex;
+  width: 1940px;
+  position: relative;
+  background-image: linear-gradient(
+      to top left,
+      hsla(0, 6%, 17%, 0.603),
+      hsla(60, 31%, 62%, 0.5)
+    ),
+    url(sectionGaleries.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-title-galerie {
+  width: 650px;
+  font-size: 280%;
+  font-weight: 300;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+.texte-galerie {
+  position: absolute;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid red;
+}
+/*Photos*/
+
+#photos li {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+}
+#photos {
+  position: absolute;
+  top: 340px;
+  right: 150px;
+  width: 750px;
+  height: auto;
+}
+
+#photos img {
+  opacity: 0;
+  border-radius: 10px;
+  width: 750px;
+  height: auto;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#photos img:target {
+  opacity: 1;
+}
+
+/* vignettes */
+
+#vignettes {
+  position: absolute;
+  width: 800px;
+  top: 330px;
+  left: 40px;
+  text-align: center;
+  opacity: 1;
+}
+
+#vignettes a:hover {
+  opacity: 0.6;
+  transition: opacity 0.4s;
+}
+
+/*Formulaire contacts*/
+.formulaireDeContact {
+  background-image: url(sectionContacts.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Commentaires*/
+.commentaires {
+  background-image: url(sectionCommentaires.jpg);
+  background-size: cover;
+  background-position: center;
+}
