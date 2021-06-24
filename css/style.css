@@ -193,7 +193,22 @@ header {
   padding-bottom: 20px;
   border-bottom: 3px solid red;
 }
-/*Photos*/
+
+#nav-galerie {
+  top: 660px;
+}
+
+#nav-galerie a:link,
+#nav-galerie a:visited {
+  color: rgb(245, 195, 57);
+}
+
+#nav-galerie a:hover,
+#nav-galerie a:active {
+  color: #bcbc80cc;
+}
+
+/*Photos galerie*/
 
 #photos li {
   position: absolute;
@@ -202,7 +217,7 @@ header {
 }
 #photos {
   position: absolute;
-  top: 310px;
+  top: 0px;
   right: 150px;
   width: 750px;
   height: auto;
@@ -221,7 +236,7 @@ header {
   opacity: 1;
 }
 
-/* vignettes */
+/* vignettes galerie*/
 
 #vignettes {
   position: absolute;
@@ -238,17 +253,77 @@ header {
 }
 
 /*Formulaire contacts*/
+
 .formulaireDeContact {
+  display: flex;
+  position: relative;
   height: 100vh;
   background-image: url(sectionContacts.jpg);
   background-size: cover;
   background-position: center;
 }
 
+.main-title-formulaire {
+  width: 830px;
+  font-size: 280%;
+  font-weight: 300;
+  color: #9e9e9dcc;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+.texte-formulaire {
+  position: absolute;
+  color: #9e9e9dcc;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid red;
+}
+
+#form-menu a:link,
+#form-menu a:visited {
+  color: #9e9e9dcc;
+}
+
+#form-menu a:hover,
+#form-menu a:active {
+  color: rgb(245, 195, 57);
+}
+
 /*Commentaires*/
 .commentaires {
+  position: relative;
   height: 100vh;
   background-image: url(sectionCommentaires.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.main-title-commentaires {
+  width: 650px;
+  font-size: 280%;
+  font-weight: 300;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+.texte-livre-d-or {
+  position: absolute;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid red;
 }
