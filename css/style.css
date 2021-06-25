@@ -252,6 +252,37 @@ header {
   transition: opacity 0.4s;
 }
 
+/*Dev-web*/
+.dev-web {
+  position: relative;
+  height: 100vh;
+  background-image: url(sectiondevweb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-title-devweb {
+  width: 650px;
+  font-size: 280%;
+  font-weight: 300;
+  margin-left: 30px;
+  padding-top: 20px;
+  border-bottom: 2px solid royalblue;
+  padding-bottom: 30px;
+}
+
+.texte-devweb {
+  position: absolute;
+  width: 800px;
+  top: 120px;
+  left: 40px;
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid red;
+}
+
 /*Formulaire contacts*/
 
 .formulaireDeContact {
@@ -316,9 +347,11 @@ label {
 
 #nom,
 #email,
+#motivations,
 textarea {
   background-color: #9e9e9dcc;
   opacity: 0.4;
+  border: 2px solid black;
 }
 
 textarea {
@@ -331,35 +364,4 @@ textarea {
   border-radius: 5px;
   margin-top: 20px;
   background-color: #bcbc80cc;
-}
-
-/*Commentaires*/
-.commentaires {
-  position: relative;
-  height: 100vh;
-  background-image: url(sectionCommentaires.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.main-title-commentaires {
-  width: 650px;
-  font-size: 280%;
-  font-weight: 300;
-  margin-left: 30px;
-  padding-top: 20px;
-  border-bottom: 2px solid royalblue;
-  padding-bottom: 30px;
-}
-
-.texte-livre-d-or {
-  position: absolute;
-  width: 800px;
-  top: 120px;
-  left: 40px;
-  font-size: 120%;
-  line-height: 150%;
-  margin-top: 30px;
-  padding-bottom: 20px;
-  border-bottom: 3px solid red;
 }
