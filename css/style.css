@@ -297,6 +297,42 @@ header {
   color: rgb(245, 195, 57);
 }
 
+form {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+  min-height: 700px;
+  min-width: 800px;
+}
+
+fieldset {
+  border-style: none;
+}
+
+label {
+  /*color: #9e9e9dcc;*/
+  font-weight: 400;
+}
+
+#nom,
+#email,
+textarea {
+  background-color: #9e9e9dcc;
+  opacity: 0.4;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+}
+
+.submit-btn {
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #bcbc80cc;
+}
+
 /*Commentaires*/
 .commentaires {
   position: relative;
