@@ -377,6 +377,7 @@
           </ul>
         </nav>
       </div>
+      <div class="table"></div>
     </section>
     <!--fin de la page développement web-->
     <!--début de la page formulaire de contacts-->
@@ -406,13 +407,21 @@
           </ul>
         </nav>
       </div>
-      <form action="#" method="post" class="contact-form">
+      <form
+        name="formulaire"
+        action="mailto:jerrylejer23@yahoo.fr"
+        method="post"
+        class="contact-form"
+      >
         <fieldset>
           <label for="nom">Nom / prénom </label>
           <input
             type="text"
+            name="nom"
             id="nom"
             placeholder="Saisie obligatoire"
+            class="nom"
+            value="nom"
             required
           /><br />
           <br />
@@ -421,15 +430,26 @@
             type="email"
             id="email"
             placeholder="Saisie obligatoire"
+            class="email"
             required
           /><br />
           <br />
           <label for="motivations">Vous me contactez pour échanger sur :</label
           ><br />
           <br />
-          <input type="checkbox" name="motivations" id="motivations" />
+          <input
+            type="radio"
+            name="motivations"
+            id="motivations"
+            value="photo"
+          />
           <strong>la photographie</strong><br />
-          <input type="checkbox" name="motivations" id="motivations" />
+          <input
+            type="radio"
+            name="motivations"
+            id="motivations"
+            value="dev-web"
+          />
           <strong>le dev-web</strong><br />
           <br />
           <label for="texte">Votre texte</label><br />
@@ -441,5 +461,6 @@
     </section>
     <!--fin de la page formulaire de contacts-->
     <section class="liensExternes" id="liens"></section>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
